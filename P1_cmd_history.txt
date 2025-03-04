@@ -1,0 +1,139 @@
+    1  git init
+    2  cd /root/Desktop/host
+    3  git init
+    4  git config --global user.name owenpark69
+    5  git config --global user.email owenpark@ucsb.edu
+    6  git checkout -b main
+    7  git add .
+    8  git commit -m "init"
+    9  git remote add origin https://github.com/zhwangs/Phyics129_git_example.git
+   10  git push -u origin main
+   11  git remote add origin https://github.com/zhwangs/Physics129_git_example.git
+   12  git push -u origin main
+   13  git remote -v
+   14  git remote remove origin
+   15  git remote -v
+   16  git remote add origin https://github.com/zhwangs/Physics129_git_example.git
+   17  git push -u origin main
+   18  git remote -v
+   19  git remote remove origin
+   20  git remote -b
+   21  git remote -v
+   22  git remote -v
+   23  git remote add origin https://github.com/owenpark69/Course_Programs/Physics 129L/owenpark_git_example.git
+   24  git push -u origin main
+   25  git remote -v
+   26  git remote add origin https://github.com/zhwangs/Physics129_git_example.git
+   27  git push -u origin main
+   28  git remote -v
+   29  git branch
+   30  git checkout -b main
+   31  git add .
+   32  git commit -m "init"
+   33  git remote add origin https://github.com/zhwangs/Physics129_git_example.git
+   34  git status
+   35  pwd
+   36  cd /root/Desktop/host
+   37  ls
+   38  mkdir bin
+   39  mkdir home
+   40  cd ./home
+   41  pwd
+   42  mkdir owenpark
+   43  cd ./owenpark
+   44  mkdir Desktop
+   45  cd ./Desktop
+   46  mkdir p1_basic_unix
+   47  cd ./p1_basic_unix
+   48  mkdir src
+   49  mkdir test
+   50  mkdir cache
+   51  cd ./src
+   52  mkdir graphic
+   53  mkdir exe
+   54  mkdir utilities
+   55  cd ../test
+   56  mkdir basic
+   57  mkdir composite
+   58  cd ../cache
+   59  mkdir metadata
+   60  mkdir data
+   61  mkdir images
+   62  mkdir history
+   63  cd /data
+   64  cd ./data
+   65  mkdir tables
+   66  mkdir directory_list
+   67  cd ../p1_basic_unix
+   68  cd ./p1_basic_unix
+   69  cd .../p1_basic_unix
+   70  cd ../../
+   71  cd ./test/basic
+   72  mkdir test_1.txt
+   73  ls
+   74  mkdir test_2.txt
+   75  mkdir test_3.txt
+   76  echo Owen Park Jan 9, 2025 >> test_1.txt
+   77  rmdir test_1.txt
+   78  ls
+   79  rmdir test_2.txt
+   80  rmdir test_3.txt
+   81  touch text_1.txt
+   82  ls
+   83  touch text_2.txt
+   84  touch text_3.txt
+   85  echo Owen Park Jan 9, 2025 >> text_1.txt
+   86  cat text_1.txt
+   87  ls -l text_1.txt > text_2.txt
+   88  cat text_1.txt
+   89  cat test_2.txt
+   90  cat text_2.txt
+   91  ls -l text_1.txt
+   92  chmod +x "text_1.txt"
+   93  ls -l "text_1.txt"
+   94  ls -1
+   95  ls -1 text_1.txt >> text_2.txt
+   96  cat text_2.txt
+   97  mv text_1.txt test_1.txt
+   98  mv text_2.txt test_2.txt
+   99  mv text_3.txt test_3.txt
+  100  ls -l
+  101  cat test_1.txt
+  102  cat test_2.txt
+  103  ls -l
+  104  echo Problem 1 Part A complete
+  105  cd ../../
+  106  history > P1_cmd_history.txt
+  107  wget -O https://zhwangs.github.io/UCSB-comp-phys/data/problem_set/P1_B.tar.gz
+  108  wget --help
+  109  wget https://zhwangs.github.io/UCSB-comp-phys/data/problem_set/P1_B.tar.gz
+  110  tar -xzf P1_B.tar.gz
+  111  ls
+  112  sha256sum P1_B
+  113  sha256sum P1_B.tar.gz
+  114  cd ./P1_B
+  115  ls
+  116  mv example.sh /root/Desktop/host/home/owenpark/Desktop/p1_basic_unix
+  117  cd ../
+  118  mv ./P1_B/example1.txt ./P1_B/demo_1.txt
+  119  mv ./P1_B/example2.txt ./P1_B/demo_2.txt
+  120  mv ./P1_B/demo_1.txt ./src/exe/demo_1.txt
+  121  mv ./P1_B/demo_2.txt ./cache/data/tables/demo_2.txt
+  122  rmdir ./P1_B
+  123  ln -s "./src/exe/demo_1.txt" "demo_link"
+  124  alias ll='ln -l'
+  125  unalias ln
+  126  unalias ll
+  127  alias ll='ls -l'
+  128  ll
+  129  echo Part B complete
+  130  history | tail-n 25 >> P1_cmd_history.txt
+  131  history > P1_cmd_history.txt
+  132  grep "statistics" "./src/exe/demo_1.txt" > ./src/utilities/grep_stat_demo1.txt
+  133  grep -r "statistics" . > ./cache/images/grep_stat_all.txt
+  134  grep -r --exclude-dir=./cache/images "statistics" . > ./cache/images/grep_stat_all.txt
+  135  grep -r --exclude-dir="/root/Desktop/host/home/owenpark/Desktop/p1_basic_unix/cache/images" "statistics" . > ./cache/images/grep_stat_all.txt
+  136  find . -type f -name "*.txt" > test_3.txt
+  137  find . -type f -name "*.txt" -exec grep -H "statistics" {} \;
+  138  echo Part C complete
+  139  history > P1_owenpark_history.txt
